@@ -11,6 +11,7 @@ export default function Header() {
       <View>
         <Image
           source={require('../assets/Rectangle.png')}
+          style={styles.avatarPlaceholder}
         ></Image>
       </View>
     </View>
@@ -36,5 +37,16 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '400',
     color: '#644D6A'
+  },
+  avatarPlaceholder: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: '#F3E5F5',
+    justifyContent: "center",
+    alignItems: "center",
+    borderStyle: 'solid',
+    borderWidth: 1.5,
+    borderColor: '#7B1FA2'
   }
 })
