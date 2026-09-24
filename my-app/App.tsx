@@ -4,6 +4,7 @@ import { Image, KeyboardAvoidingView, ScrollView, StyleSheet, Text, TextInput, T
 import Header from "./components/Header";
 import AcaiCard from "./components/Menu";
 import CustomButton from "./components/CustomButton";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [name, setName] = useState('');
@@ -127,9 +128,7 @@ export default function App() {
 
             </View>
             
-            <View style={styles.footer}>
-              <Text style={styles.footerText}>Açaí Prime • JP | TDS</Text>
-            </View>
+            <Footer />
 
           </View>
           {/* Body */}
@@ -298,19 +297,4 @@ const styles = StyleSheet.create({
     paddingLeft: 8
   },
   //Order
-
-  //Footer
-  footer: {
-    flexDirection: 'row',
-    paddingVertical: 16,
-    paddingHorizontal: 20,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  footerText: {
-    fontSize: 11,
-    fontWeight: '500',
-    color: '#6C757D'
-  }
-  //Footer
 })
